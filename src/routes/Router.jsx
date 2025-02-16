@@ -12,23 +12,25 @@ import Gcard from "../pages/public/Gcard";
 import AboutUs from "../pages/public/AboutUs";
 import Resources from "../pages/public/Resources";
 import Training from "../pages/public/Training";
+import NotFound from "../pages/public/NotFound";
 
 const Router = () => {
   return (
     <Routes>
       <Route path="/" element={<Layout/>}>
            <Route index element={<Home />}/>
-           <Route path="our-deprtments" element={<OurDepartments />}/>
-           <Route path="sector" element={<Sectors />}/>
+           <Route path="departments" element={<OurDepartments />}/>
+           <Route path="sectors" element={<Sectors />}/>
            <Route path="services" element={<Services />}/>
            <Route path="about-us" element={<AboutUs/>} />
            <Route path="resources" element={<Resources/>} />
            <Route path="training" element={<Training/>} />
            <Route path="our-projects" element={<OurProjects />}/>
-           <Route path="announcement" element={<Nen />}/>
+           <Route path="news-events-notices" element={<Nen />}/>
            <Route path="career" element={<Career />}/>
            <Route path="g-card" element={<Gcard />}/>
       </Route>
+      <Route path="*" element={<NotFound />}/>
     </Routes>
   );
 };
