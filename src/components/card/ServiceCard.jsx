@@ -25,7 +25,7 @@ const ServiceCard = ({ service }) => {
     >
       {/* content */}
       <p className="text-xs text-center py-2">
-        {service?.description.substring(0, 80)}... <Link to={`services/${service?.id}`}>Readmore</Link>
+        {service?.description.substring(0, 80)}... <Link to={`services/${service?.id}`} className="text-blue-700 underline">Readmore</Link>
       </p>
     </Card>
   );

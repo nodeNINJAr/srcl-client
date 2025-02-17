@@ -1,6 +1,7 @@
 
 import { HomeOutlined } from "@ant-design/icons";
 import { Link } from "react-router";
+import { MdKeyboardArrowDown } from "react-icons/md";
 
 export const menuItems = [
   {
@@ -22,7 +23,7 @@ export const menuItems = [
   },
   {
     key: "about-us",
-    label: "About Us",
+    label: <span className="flex justify-between items-center gap-1">About Us <MdKeyboardArrowDown className="text-lg hidden lg:flex" /></span>,
     children: [
       { key: "organization", label: <Link to="/about/organization">The Organization</Link> },
       { key: "mission", label: <Link to="/about/mission">Mission</Link> },
@@ -35,7 +36,7 @@ export const menuItems = [
   },
   {
     key: "projects",
-    label: "Our Projects",
+    label: <span className="flex justify-between items-center gap-1">Our Projects <MdKeyboardArrowDown className="text-lg hidden lg:flex" /></span>,
     children: [
       { key: "featured", label: <Link to="/projects/featured">Featured Projects</Link> },
       { key: "all-projects", label: <Link to="/projects/all">All Projects</Link> },
@@ -55,7 +56,7 @@ export const menuItems = [
   },
   {
     key: "resources",
-    label: "Resources",
+    label:<span className="flex justify-between items-center gap-1">Resources <MdKeyboardArrowDown className="text-lg hidden lg:flex" /></span>,
     children: [
       { key: "survey-equipment", label: <Link to="/resources/survey-equipment">Precision Survey Equipment</Link> },
       { key: "software-tools", label: <Link to="/resources/software-tools">Software and Tools</Link> },
@@ -74,8 +75,8 @@ export const menuItems = [
   },
   { key: "news-events-notices", label: <Link to="/news-events-notices">News | Events | Notices</Link> },
   {
-    key: "career",
-    label: "Career",
+    key:"career",
+    label: <span className="flex justify-between items-center gap-1"> Career <MdKeyboardArrowDown className="text-lg hidden lg:flex" /></span>,
     children: [
       { key: "vacancies", label: <Link to="/career/vacancies">Vacancies</Link> },
       { key: "vacancy-status", label: <Link to="/career/vacancy-status">Vacancy Status</Link> },
@@ -84,7 +85,7 @@ export const menuItems = [
   },
   {
     key: "g-card",
-    label: "G-CARD",
+    label:<span className="flex justify-between items-center gap-1">G-CARD  <MdKeyboardArrowDown className="text-lg hidden lg:flex" /></span>,
     children: [
       { key: "about-us-gcard", label: <Link to="/g-card/about">About US</Link> },
       { key: "mission-gcard", label: <Link to="/g-card/mission">Mission</Link> },

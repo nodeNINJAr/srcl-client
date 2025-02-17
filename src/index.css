@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 /* ... */
+html {
+  scroll-behavior: smooth;
+}
 /* Additional custom styles */
 .who-we-are-section {
     @apply p-8;
@@ -21,4 +24,7 @@
   }
   .ant-card-body {
     padding: 0px!important;
+  }
+  .ant-menu-horizontal .ant-menu-submenu {
+    padding-inline: 6px!important; /* If you're using Ant Design */
   }

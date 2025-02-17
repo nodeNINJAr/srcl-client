@@ -22,7 +22,7 @@ const OurProjectsCard = ({project}) => {
             {project?.title}
           </h2>
       <p className="text-xs text-left py-2">
-        {project?.description.substring(0, 150)}... <Link to={`services/${project?.id}`}>Readmore</Link>
+        {project?.description.substring(0, 150)}... <Link to={`services/${project?.id}`} className='text-blue-700 underline'>Readmore</Link>
       </p>
     </Card>
   )
