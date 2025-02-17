@@ -3,3 +3,22 @@
 @tailwind utilities;
 
 /* ... */
+/* Additional custom styles */
+.who-we-are-section {
+    @apply p-8;
+  }
+  
+  .left-column {
+    @apply text-justify;
+  }
+  
+  .right-column {
+    @apply text-justify;
+  }
+  
+  .message-item {
+    @apply flex items-center mb-4;
+  }
+  .ant-card-body {
+    padding: 0px!important;
+  }
